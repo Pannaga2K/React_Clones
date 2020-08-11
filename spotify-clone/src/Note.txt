@@ -1,0 +1,25 @@
+CSS:
+
+    display: grid;
+    place-items: center;    //CENTERS ALL THE GRID EQAULLY
+    display: flex;          //SET TO ROW BY DEFAULT
+    hieght: 100vh;          //GOES ALL THE WAY FROM TOP TO BOTTOM 
+    flex: 0.2; | 0.8;       //FITS THE SIZE OF THE CONTAINER TO 20% AND 80% OF THE WINDOW SIZE
+    overflow-y: overlay     //OVERLAYS THE FLOW OF THE CONTAINER W.R.T Y-AXIS
+
+DATA LAYER: 
+
+    - PROP_DRILLING ---> PASSING PROPS THROUGH EVERY COMPONENTS //NOT PRODUCTIVE
+    - REACT_CONTEXT_API/REDUX ---> CAN BE USED ---> PROPS CAN BE PULLED AT ANY COMPONENT W/O PASSING PROPS 
+
+                                                                ___     
+                                        INDEX.JS                   |    ---> DATALAYER[INITIALSTATE, REDUCER]
+                                        |                          |
+                                        APP.JS                     |
+                                /          |                       |
+                            PLAYER.JS   LOGIN.JS                   |
+                        /       |    \                             |
+                    SIDEBAR.JS  |    BODY.JS                       |
+                        |       FOOTER.JS                          |
+                        |                                          |
+                SIDEBAROPTION.JS                                ___|
