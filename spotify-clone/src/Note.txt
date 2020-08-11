@@ -17,11 +17,14 @@ DATA LAYER:
                                                                 ___     
                                         INDEX.JS                   |    ---> DATALAYER[INITIALSTATE, REDUCER]
                                         |                          |
-                                        APP.JS                     |
+                                 ______ APP.JS                     |    ---> USING REACT_CONTEXT_API
                                 /          |                       |
                             PLAYER.JS   LOGIN.JS                   |
                         /       |    \                             |
                     SIDEBAR.JS  |    BODY.JS                       |
-                        |       FOOTER.JS                          |
-                        |                                          |
-                SIDEBAROPTION.JS                                ___|
+                        |       FOOTER.JS  | \                     |
+                        |                  |  \                    |
+                SIDEBAROPTION.JS         __|   \                   |
+                                        |       \                  |
+                                    HEADER.JS    \                 |             
+                                                SONGROW.JS      ___|
