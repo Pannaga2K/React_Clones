@@ -1,0 +1,26 @@
+CSS:-
+
+    scroll-snap-type: y mandatory;       //SCROLL SNAP EFFECT ALONG Y-AXIS
+    display: grid;
+    place-items: center;                 //CENTERS THE GRIDS MIDWAY THROUGH X AND Y-AXIS
+    height: 12vh;                        
+    scroll-snap-align: start;            //SNAPS WHEN SCROLLED
+
+
+HOOKS:-
+
+    useRef             ---> POINTER ---> POINTS TO SOMETHING
+    useState           ---> SAVES AS A STATE [VARIABLE]
+
+FIREBASE:-
+
+    - CREATE A PROJECT
+    - GO TO CONSOLE ---> PROTJECT SETTINGS ---> SET FOR HOSTING ---> INSTALL FIREBASE ---> COPY & PASTE CONFIG CODE INSIDE FIREBASE.JS FILE AS A CONST VARIABLE
+    - STORING IN DB AND RETRIEVING IT ---> DATABASE ---> ADD COLLECTION ---> ADD KEY AND VALUE PAIR 
+    - DEPLOYMENT:-
+        - firebase login
+        - firebase init
+        - npm run build
+        - firebase deploy
+
+Set-ExecutionPolicy RemoteSigned
