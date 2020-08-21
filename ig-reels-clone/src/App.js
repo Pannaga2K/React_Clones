@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import VideoCard from "./VideoCard";
+import VideoCard from "./VideoCard/VideoCard";
 import db from "./firebase";
 
 function App() {
