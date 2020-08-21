@@ -1,0 +1,17 @@
+CSS:-
+    display: grid;
+    place-items: center;                               ---> CENTERS THE GRID 
+    box-shadow: -1px 4px 20px -6px rgba(0,0,0,0.2);
+    flex: 0.35; 0.65;                                  ---> TAKES THE PORTION 
+
+React-router-dom --->   useParams()
+
+
+FIREBASE DB:-
+    - db.collection(<collection_name>).onSnapshot() ---> GETS ALL THE DOCS INSIDE <collection_name>
+    - db.collection(<collection_name>).add({})      ---> ADDS AN OBJECT TO THE RESPECTIVE COLLECTION
+
+    - auth.signInWithPopup(provider)                ---> SIGN IN WITH GOOGLE
+
+    
+https://avatars.dicebear.com/api/human/${seed}.svg ---> PICKS A RANDOM AVATAR
