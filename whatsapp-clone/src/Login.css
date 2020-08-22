@@ -27,8 +27,11 @@
 
 .login__container > button {
     font-size: 20px;
-    background-color: gray;
     margin-top: 10px;
     /* text-transform: inherit !important; ---> TO REMOVE UPPERCASE VALUE / INHERITS PARENT STYLE WHICH IS A NORMAL FONT */
+}
+
+.login__container > button:hover {
+    color: grey !important;
 }
 

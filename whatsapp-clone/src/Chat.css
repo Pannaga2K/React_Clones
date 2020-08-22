@@ -29,6 +29,10 @@
     color: grey;
 }
 
+.chat__headerRight > .MuiIconButton-root {
+    color: grey !important;
+}
+
 .chat__body {
     flex: 1;
     background-image: url("https://www.freepnglogos.com/uploads/assassins-creed-logo-png/assassins-creed-logo-assassin-creed-syndicate-logo-7.png");

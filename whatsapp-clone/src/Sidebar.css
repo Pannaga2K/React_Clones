@@ -2,18 +2,15 @@
     display: flex;
     flex-direction: column;
     flex: 0.35;
+    background-color: #0f0f0f;
+
 }
 
 .sidebar__header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #0f0f0f;
     color: grey;
-}
-
-.sidebar__header > .MuiSvgIcon-root {
-    color: gray;
 }
 
 .sidebar__headerRight {
@@ -28,10 +25,13 @@
     font-size: 10px !important;
 }
 
+.sidebar__headerRight > .MuiIconButton-root {
+    color: grey !important;
+}
+
 .sidebar__search {
     display: flex;
     align-items: center;
-    background-color: rgb(74, 74, 74);
     height: 39px;
     padding: 10px;
 }
@@ -40,6 +40,7 @@
     border: none;
     margin-left: 10px;
     background-color: #0f0f0f;
+    width: 100%;
 }
 
 .sidebar__searchContainer {
@@ -51,7 +52,7 @@
     border-radius: 20px;
 }
 
-.sidebar__searchContainer > MuiSvgIcon-root {
+.sidebar__searchContainer > .MuiSvgIcon-root {
     color: gray;
 }
 

@@ -14,15 +14,15 @@ function Sidebar() {
     const [{user}, dispatch] = useDataLayerValue();
 
     useEffect(() => {
-        const unsubscribe = db.collection("rooms").onSnapshot(snapshot => (
+        db.collection("rooms").onSnapshot(snapshot => (
             setRooms(snapshot.docs.map((doc) => ({
                     id: doc.id,
                     data: doc.data()
             })))
         ));
-        return () => {
-            unsubscribe();         //FLUSHES/CLEANS IT, IF THE COMPONENT UNMOUNTS
-        }
+        // return () => {
+        //     unsubscribe();         //FLUSHES/CLEANS IT, IF THE COMPONENT UNMOUNTS
+        // }
     }, []);
 
     return (

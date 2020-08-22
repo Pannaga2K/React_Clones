@@ -25,7 +25,10 @@ function Chat() {
             db.collection("rooms").doc(roomId).onSnapshot((snapshot) => (
                 setRoomName(snapshot.data().name)
             ));
+            // console.log(roomName);
             db.collection("rooms").doc(roomId).collection("messages").orderBy("timestamp", "asc").onSnapshot((snapshot) => setMessages(snapshot.docs.map((doc) => doc.data())));
+            console.log(!messages);
+
         }
     }, [roomId]);
 
@@ -45,6 +48,7 @@ function Chat() {
     }
 
     // console.log(input);
+    var x = (messages[0]==undefined) ? (<p>YET TO START CONVERSATION</p>) : (<p>LAST SEEN {new Date(messages[messages.length - 1]?.timestamp?.toDate()).toUTCString()}</p> );
 
     return (
         <div className="chat">
@@ -52,7 +56,7 @@ function Chat() {
                 <Avatar src={`https://avatars.dicebear.com/api/human/${seed}.svg`}/>
                 <div className="chat__headerInfo">
                     <h1>{roomName}</h1>
-                    <p>LAST SEEN {new Date(messages[messages.length - 1]?.timestamp?.toDate()).toUTCString()}</p>
+                    {x}                   
                 </div>
                 <div className="chat__headerRight">
                     <IconButton>
