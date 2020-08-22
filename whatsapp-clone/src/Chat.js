@@ -75,14 +75,18 @@ function Chat() {
                     <p className={`chat__message ${message.name === user.displayName && "chat__reciever"}`}><span className="chat__name">{message.name}</span>{message.message}<span className="chat__timestamp">{new Date(message.timestamp?.toDate()).toUTCString()}</span></p>
                 ))}
             </div>
-            <div className="chat__footer">
-                <InsertEmoticonIcon/>
-                <form>
-                    <input type="text" value={input} onChange={e => setInput(e.target.value)} placeholder="TYPE A MESSAGE" />
-                    <button onClick={sendMessage} type="submit">SEND</button>
-                </form>
-                <MicIcon/>   
-            </div>
+            {!roomId ? (
+                <p className="chat__new">ADD NEW CHAT OR CONTINUE WITH OLDER CONVERSATION</p>
+            ) : (
+                <div className="chat__footer">
+                    <InsertEmoticonIcon/>
+                    <form>
+                        <input type="text" value={input} onChange={e => setInput(e.target.value)} placeholder="TYPE A MESSAGE" />
+                        <button onClick={sendMessage} type="submit">SEND</button>
+                    </form>
+                    <MicIcon/>   
+                </div>
+            )}
         </div>
     )
 }

@@ -76,6 +76,11 @@
     color: black;
 }
 
+.chat__new {
+    margin: 0 auto;
+    font-size: large;
+}
+
 .chat__footer {
     display: flex;
     justify-content: space-between;
