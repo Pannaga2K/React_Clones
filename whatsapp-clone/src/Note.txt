@@ -13,5 +13,5 @@ FIREBASE DB:-
 
     - auth.signInWithPopup(provider)                ---> SIGN IN WITH GOOGLE
 
-    
+    - https://whatsapp-clone-f7c3b.firebaseapp.com  ---> DEPLOYED WEBSITE
 https://avatars.dicebear.com/api/human/${seed}.svg ---> PICKS A RANDOM AVATAR
