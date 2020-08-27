@@ -12,13 +12,10 @@ import {Grid, Slider} from "@material-ui/core";
 function Footer() {
     return (
         <div className="footer">
-            {/* <h1>VAISHUUUUUUUUU</h1> */}
             <div className="footer__left">
                 <img className="footer__albumLogo" src="https://steamuserimages-a.akamaihd.net/ugc/88223091562539525/56E666D7BB0DC2D55156ED027AF53F373B66A504/" alt="" />
-                <div className="footer__songInfo">
-                     <h4>VAISHUUUU!!!</h4>
-                     <p>VNS</p>
-                </div>
+                {/* <div className="footer__songInfo">
+                </div> */}
             </div>
             <div className="footer__center">
                 <ShuffleIcon className="footer__green" />
