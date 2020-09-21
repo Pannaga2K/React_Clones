@@ -1,0 +1,25 @@
+.checkoutProduct {
+    display: flex;
+    flex-direction: column;
+    color: grey;
+    margin-top: 10px;
+}
+
+.checkoutProduct__image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.checkoutProduct > button {
+    margin-top: 15px;
+    background-color: black;
+    border: 1px solid #0f0f0f;
+    color: grey;
+    cursor: pointer;
+}
+
+.checkoutProduct > button:hover {
+    color: #0f0f0f;
+    background-color: grey;
+}

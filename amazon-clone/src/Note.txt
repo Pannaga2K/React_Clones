@@ -1,0 +1,20 @@
+REACT_JS
+REACT_CONTEXT_API
+FIREBASE
+STRIPE             ---> PAYMENT FUNCTIONALITY
+
+
+                                                            _
+                        APP.JS                               |
+                      /      \                               |    ---> DATA_LAYER
+                     /        \                              |    ---> REACT_CONTEXT_API
+                HEADER.JS  LOGIN.JS                          |
+                    /  \                                     |
+                   /    \                                    |
+                HOME.JS  CHECKOUT.JS                         |
+                   |            |   \                        |
+                PRODUCT.JS      |   SUBTOTAL.JS              |
+                            CHECKOUTPRODUCT.JS              _|
+
+
+DEPLOYED WEBSITE ---> https://clone-v2-89be0.web.app
