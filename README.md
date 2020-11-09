@@ -9,6 +9,8 @@
         - material-ui/core material-ui/icons            
             - STYLING
         - firebase & firebase-tools
+        - swiper-js
+        - react-player
   - REACT_JS
         - HOOKS
             - useState
