@@ -11,6 +11,7 @@
         - firebase & firebase-tools
         - swiper-js
         - react-player
+            - PLAY YOUTUBE VIDEOS
   - REACT_JS
         - HOOKS
             - useState
