@@ -1,0 +1,70 @@
+.body__containerFour {
+    position: relative;
+    background-color: black;
+    height: 600px;
+}
+
+.body__containerFour > h1 {
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container__cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container__insideUbiCards {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container__insideUbiCards > img {
+    position: relative;
+    width: 350px;
+    height: auto;
+    object-fit: contain;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.container__cardsTitle {
+    min-height: 30%;
+    max-height: 80%;
+    z-index: 1;
+}
+
+.container__cardsTitle > p > strong {
+    position: absolute;
+    width: 300px;
+    background-color: rgba(0, 0, 0, .5);
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.45rem;
+    line-height: 1.625rem;
+    padding: 20px 20px 20px 20px;
+    color: white;
+    opacity: 1;
+    text-shadow: black;
+    transition: color 500ms;
+    cursor: pointer;
+}
+
+.container__cardsTitle > p > strong:hover {
+    color: #0f0f0f;
+}
+
+.subTitle > strong {
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    bottom: 0 !important;
+    top: 45% !important;
+}

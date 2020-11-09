@@ -1,0 +1,189 @@
+.body__banner {
+    display: flex;
+    height: 60px;
+    min-width: auto;
+    background-color: #0f0f0f;
+    justify-content: space-around;
+}
+
+.body__banner > h1 {
+    font-size: 35px;
+    width: 500px;
+    min-width: 500px;
+    margin-left: 400px;
+}
+
+.body__banner > button {
+    background-color: black;
+    border: none;
+    height: 35px;
+    margin: auto 20px;
+    width: 200px;
+    color: grey;
+    outline: none;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+
+.body__banner > button:hover {
+    background-color: #0f0f0f;
+    color: white;
+}
+
+.body__container {
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid grey; */
+}
+
+.body__list {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.body__navigation{
+    position:absolute;
+    bottom: 25px;
+    height: 80px;
+    width: 40px;
+    opacity: 0.7;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.body__navigation:hover{
+    opacity: 0.9;
+}
+
+#prev{
+    left: 0px;
+}
+#next{
+    right: 0px;
+}
+
+.gameIntro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.gameIntro > img {
+    position: relative;
+    object-fit: contain;
+    width: 100%;
+}
+
+.gameIntro__tagline {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: lightgrey;
+    justify-content: center;
+    z-index: 1;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+    top: 220px;
+}
+
+.gameIntro__tagline > p > strong {
+    font-size: 66px;
+}
+
+.gameIntro__tagline > p:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    /* left:  */
+}
+
+.gameIntro__buttons {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.gameIntro__buttons > button {
+    display: flex;
+    background-color: black;
+    color: grey;
+    border: none;
+    width: 100px;
+    outline: none;
+    margin-top: 20px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.gameIntro__buttons > button:hover {
+    background-color: #0f0f0f;
+}
+
+.gameIntro__toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+.gameIntro__toggle > img {
+    position: absolute;
+    width: 200px;
+    bottom: 70px;
+}
+
+/* LEFT */
+.gameIntro__nameForward {
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+    display: flex;
+    text-align: center;
+}
+
+.gameIntro__nameForward > ul {
+    list-style: none;
+    display: flex;
+    opacity: 0.4;
+}
+
+.gameIntro__nameForward > ul > li {
+    width: 200px;
+    cursor: pointer;
+}
+
+/* RIGHT */
+.gameIntro__nameBackward {
+    position: absolute;
+    right: 20px;
+    bottom: 40px;
+    display: flex;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.gameIntro__nameBackward > ul {
+    list-style: none;
+    display: flex;
+    opacity: 0.4;
+}
+
+.gameIntro__nameBackward > ul > li {
+    width: 200px;
+    cursor: pointer;
+}
+
+/* SLIDE EFFECTS */
+

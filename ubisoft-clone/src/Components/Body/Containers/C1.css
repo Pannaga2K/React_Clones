@@ -1,0 +1,96 @@
+/* BODY CONTAINER 1 */
+.body__containerOne {
+    position: relative;
+    background-color: #0f0f0f;
+    height: 100vh;
+}
+
+.body__containerOne > h1 {
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.gamesCard {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 520px;
+}
+
+.gameCard__info {
+    height: 400px !important;
+    min-width: 100px !important;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+
+.gameCard__info:hover {
+    background-color: #1f1f1f;
+    color: black;
+}
+
+.gameCard__info > img {
+    width: 200px;
+}
+
+.gameCard__tagline {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.gameCard__tagline > h3 {
+    text-align: center;
+    width: 200px;
+}
+
+.gameCard__logo {
+    display: flex;
+}
+
+.gameCard__logo > img {
+    margin: 5px;
+    width: 25px;
+}
+
+.navigation__gameCard {
+    position: absolute;
+    bottom: 0;
+    left: 595px;
+    margin: 0 auto;
+    background-color: black;
+    color: grey;
+    border: none;
+    padding: 15px;
+    outline: none;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+
+.navigation__gameCard:hover {
+    background-color: grey;
+    color: black;
+}
+
+/* SWIPER */
+.swiper-container {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    height: 550px !important;
+}
+
+.swiper-button-prev , .swiper-button-next {
+    top: 450px !important;
+    color: grey !important;
+    padding: 10px;
+    transition: color 500ms;
+}
+
+.swiper-button-prev:hover , .swiper-button-next:hover {
+    color: black !important;
+}

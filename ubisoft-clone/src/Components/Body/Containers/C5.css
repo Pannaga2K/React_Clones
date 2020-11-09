@@ -1,0 +1,99 @@
+.body__containerFive {
+    position: relative;
+    background-color: #0f0f0f;
+    height: 600px;
+    width: 100%;
+}
+
+.body__containerFive > h1 {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.body__containerFive:after {
+    position: absolute;
+    content: "";
+    right: 50%;
+    bottom: -30px;
+    border-top: 30px solid #0f0f0f;
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-bottom: none;
+    z-index: 1;
+}
+
+.container__videos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container__videosThumbnail {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    max-width: fit-content;
+}
+
+.container__videosThumbnail > img {
+    width: 300px;
+    height: auto;
+}
+
+.container__icon {
+    position: absolute;
+    left: 130px;
+    top: 80px;
+    color: black;
+    font-size: 35px !important;
+    transition: transform 500ms !important;
+    cursor: pointer;
+}
+
+.container__icon:hover {
+    transform: scale(2) !important;
+    color: #0f0f0f;
+}
+
+.container__videosTitle {
+    width: 250px;
+}
+
+.container__videosTitle > p {
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.container__closeIcon {
+    position: absolute;
+    right: 0;
+    transition: transform 500ms !important;
+    cursor: pointer;
+}
+
+.container__closeIcon:hover {
+    transform: scale(1.5);
+    color: black;
+}
+
+.body__containerFive > button {
+    display: block;
+    background-color: black;
+    color: grey;
+    width: 200px;
+    height: 40px;
+    border: none;
+    outline: none;
+    margin: 200px auto;
+    font-size: 20px;
+    transition: background-color 500ms;
+    cursor: pointer;
+}
+
+.body__containerFive > button:hover {
+    background-color: #0f0f0f;
+    color: black;
+}

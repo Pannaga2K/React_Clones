@@ -1,0 +1,53 @@
+.body__containerSix {
+    position: relative;
+    background-color: black;
+    height: 400px;
+}
+
+.container__ubisoft {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.container__ubisoft > img {
+    padding-top: 50px;
+    width: 440px;
+    height: auto;
+}
+
+.container__tagline {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
+.container__tagline > h1 {
+    width: fit-content;
+    font-size: 50px;
+}
+
+.container__tagline > p {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container__logo {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.container__logo > img {
+    width: 150px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .container__ubisoft > img {
+      width: 100%;
+    }
+}
