@@ -1,0 +1,13 @@
+REACT_JS UBISOFT_CLONE
+
+    - REACT_HOOKS
+        - useState()
+        - useEffect()
+    - FIREBASE
+        - CLOUD STORE
+        - HOSTING
+    - EXTERNAL PACKAGES
+        - MATERIAL-UI
+        - SWIPER_JS
+        - REACT_PLAYER
+        
