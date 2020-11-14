@@ -14,7 +14,6 @@ import SwiperCore, { Navigation } from 'swiper';
 // NAVIGATION
 SwiperCore.use([Navigation]);
 
-var i = 0;
 function C1() {
     // SWIPER
     const swiper = new Swiper('.swiper-container', {
@@ -22,7 +21,7 @@ function C1() {
         observeParents: true,
         loop: true,
         slidesPerView: 6,
-        spaceBetween: 20,
+        spaceBetween: 22,
         // Navigation arrows
         navigation: {
           nextEl: '.swiper-button-next',
@@ -32,8 +31,7 @@ function C1() {
 
     // CONTAINER ONE
     const [gameCard, setGameCard] = useState([]);
-    const [currentGameCards, setCurrentGameCards] = useState([]);
-    const iconArray = [WINDOWS, PS4, XBOX_ONE, STADIA, NINTENDO_SWITCH, VR_LOGO];
+    const iconArray = [WINDOWS, PS4, XBOX_ONE, STADIA, NINTENDO_SWITCH, VR_LOGO];  
     useEffect(() => {
         db.collection("gameCard").onSnapshot((snapshot) => {
             setGameCard(snapshot.docs.map(doc => doc.data()));
@@ -63,11 +61,6 @@ function C1() {
                 <div className="swiper-button-prev"></div>
                 <button className="navigation__gameCard">VIEW MORE GAMES</button>
                 <div className="swiper-button-next"></div>
-                {/* <div className="navigation__gameCard">
-                    <span className="gameCard__navigation swiper-button-prev" id="prev2" ><ChevronLeftIcon/></span>
-                    <button>VIEW MORE GAMES</button>
-                    <span className="gameCard__navigation swiper-button-next" id="next2" ><ChevronRightIcon/></span>
-                </div> */}
             </div>
             
         </div>

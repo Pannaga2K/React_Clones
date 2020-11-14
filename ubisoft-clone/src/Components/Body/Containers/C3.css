@@ -58,4 +58,21 @@
     color: white;
 }
 
+@media screen and (max-width: 700px) {
+    .body__containerThree {
+        height: 1800px;
+    }
+    
+    .container__store {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .container__storeCard {
+        margin-bottom: 50px;
+    }
+
+    .container__storeCard > img {
+        height: 500px;
+    }
+}

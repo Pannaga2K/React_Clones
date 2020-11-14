@@ -122,7 +122,7 @@ function Body({games}) {
                             {(x?.watchTrailer && x?.visitSite) ? <><button>WATCH TRAILER</button><button>VISIT SITE</button></> : ((x?.watchTrailer) ? (<button>WATCH TRAILER</button>) : (<button>VISIT SITE</button>))}
                         </div>
                     </div>
-                </div>    
+                </div>
                 <div className="gameIntro__toggle">
                     <div className="gameIntro__nameForward">
                         <ul>

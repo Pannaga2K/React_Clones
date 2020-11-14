@@ -46,8 +46,21 @@
     margin-right: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
+    .body__containerSix {
+        height: 700px;
+    }
+
+    .container__ubisoft {
+        display: flex;
+        flex-direction: column;
+    }
+
     .container__ubisoft > img {
       width: 100%;
+    }
+
+    .container__tagline {
+        align-items: center;
     }
 }

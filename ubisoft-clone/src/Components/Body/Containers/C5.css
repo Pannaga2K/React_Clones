@@ -14,7 +14,7 @@
 .body__containerFive:after {
     position: absolute;
     content: "";
-    right: 50%;
+    right:47.5vw;
     bottom: -30px;
     border-top: 30px solid #0f0f0f;
     border-right: 30px solid transparent;
@@ -87,7 +87,7 @@
     height: 40px;
     border: none;
     outline: none;
-    margin: 200px auto;
+    margin: 10vw auto;
     font-size: 20px;
     transition: background-color 500ms;
     cursor: pointer;
@@ -96,4 +96,20 @@
 .body__containerFive > button:hover {
     background-color: #0f0f0f;
     color: black;
+}
+
+@media screen and (max-width: 700px) {
+    .body__containerFive {
+        height: 1100px;
+    }
+
+    .container__videos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container__videosThumbnail {
+        margin-bottom: 100px;
+    }
 }

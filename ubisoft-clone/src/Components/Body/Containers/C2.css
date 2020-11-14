@@ -1,7 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 .body__containerTwo {
     position: relative;
     background-color: black;
-    height: 900px;
+    height: 1000px;
 }
 
 .body__containerTwo > h1 {
@@ -14,8 +18,10 @@
 
 .container__news {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-gap: 1rem;
+    /* grid-template-columns: repeat(2, 1fr); */
+    margin-bottom: 50px;
 }
 
 .container__newsGrid {
@@ -105,4 +111,10 @@
 
 .container__button:hover {
     background-color: black;
+}
+
+@media screen and (max-width: 700px) {
+    .body__containerTwo {
+        height: 1650px;
+    }
 }

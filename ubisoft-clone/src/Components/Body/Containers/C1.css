@@ -12,16 +12,17 @@
     padding-bottom: 20px;
 }
 
+/* GAMES_CARD */
 .gamesCard {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-around;
-    height: 520px;
+    height: 50vh;
 }
 
 .gameCard__info {
-    height: 400px !important;
+    height: 60vh !important;
     min-width: 100px !important;
     transition: background-color 1s;
     cursor: pointer;
@@ -33,7 +34,7 @@
 }
 
 .gameCard__info > img {
-    width: 200px;
+    width: 15vw;
 }
 
 .gameCard__tagline {
@@ -42,27 +43,30 @@
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    font-size: 1.3vw;
 }
 
 .gameCard__tagline > h3 {
     text-align: center;
-    width: 200px;
+    width: 15vw;
 }
 
 .gameCard__logo {
     display: flex;
+    width: 15vw;
+    align-items: center;
+    justify-content: center;
 }
 
 .gameCard__logo > img {
     margin: 5px;
-    width: 25px;
+    width: 2vw;
 }
 
 .navigation__gameCard {
     position: absolute;
     bottom: 0;
-    left: 595px;
-    margin: 0 auto;
+    margin: 10px auto;
     background-color: black;
     color: grey;
     border: none;
@@ -81,11 +85,17 @@
 .swiper-container {
     margin-left: 10px !important;
     margin-right: 10px !important;
-    height: 550px !important;
+    height: 75vh !important;
+}
+
+.swiper-slide {
+    width: fit-content;
+    height: fit-content;
+    padding-bottom: 10px;
 }
 
 .swiper-button-prev , .swiper-button-next {
-    top: 450px !important;
+    top: 65vh !important;
     color: grey !important;
     padding: 10px;
     transition: color 500ms;

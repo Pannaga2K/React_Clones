@@ -50,7 +50,6 @@ function C2() {
 
     const onClick = (i) => {
         setSelectedIndex(i);
-        // console.log(index);
     }
 
     return (
