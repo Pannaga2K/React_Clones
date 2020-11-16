@@ -11,3 +11,5 @@ REACT_JS UBISOFT_CLONE
         - SWIPER_JS
         - REACT_PLAYER
         
+
+DEPLOYED WEBSITE --->  https://ubisoft-clone.web.app
