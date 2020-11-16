@@ -63,4 +63,12 @@
     .container__tagline {
         align-items: center;
     }
+
+    .container__logo {
+        flex-direction: column;
+    }
+
+    .container__logo > img {
+        margin-bottom: 20px;
+    }
 }

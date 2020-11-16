@@ -34,7 +34,7 @@
     display: flex;
     flex-direction: column;
     background-color: #0f0f0f;
-    height: 410px;
+    height: 400px;
 }
 
 .footer__top {
@@ -51,7 +51,7 @@
 }
 
 .footer__mainLinks > img {
-    width: 110px;
+    width: 10vw;
     object-fit: contain;
 }
 
@@ -169,13 +169,13 @@
 }
 
 .footer__bottom {
-    padding-top: 40px;
-    font-size: 15px;
+    padding-top: 5vw;
+    font-size: 0.7em;
 }
 
 .footer__bottom > p {
     text-align: center;
-    width: 600px;
+    width: 58vw;
     display: block;
     margin: 0 auto;
 }

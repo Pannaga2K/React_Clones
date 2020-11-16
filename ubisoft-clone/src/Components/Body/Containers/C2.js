@@ -65,7 +65,7 @@ function C2() {
                     {currentNews?.map((n, index) => (
                         <div className={(currentNews.length%2 === 1 && index === 0 ? ("container__newsGrid__odd") : ("container__newsGrid"))}>
                             <img src={n.image} alt="..." />
-                            <div className="container__newsGride__tagline">
+                            <div className="container__newsGrid__tagline">
                                 <p>{n.date}</p>
                                 <h3>{n.title}</h3>
                             </div>
