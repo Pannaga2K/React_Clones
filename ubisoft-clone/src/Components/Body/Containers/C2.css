@@ -50,10 +50,8 @@
 
 .container__newsGrid > img {
     object-fit: contain;
-    /* width: 300px; */
-    width: 25vw;
+    width: 20vw;
     margin: 20px;
-    max-width: 50vw;
 }
 
 .container__newsGrid:nth-child(6n+3), .container__newsGrid:nth-child(6n+4)  {
@@ -143,6 +141,10 @@
     .container__newsGrid__odd {
         grid-column-start: 1;
         grid-column-end: 3;
+    }
+
+    .container__newsGrid > img {
+        width: 130px;
     }
 
     .container__newsGrid__tagline {
