@@ -1,0 +1,23 @@
+.mailList {
+    flex: 1;
+    overflow: scroll;
+}
+
+.mailList__settings {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 1px solid black; */
+    /* background-color: black; */
+    z-index: 99;
+    padding-right: 10px;
+}
+
+.mailList__sections {
+    position: sticky;
+    top: 0;
+    display: flex;
+    /* border-bottom: 1px solid black; */
+    z-index: 999;
+}

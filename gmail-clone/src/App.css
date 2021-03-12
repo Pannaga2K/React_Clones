@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.app {
+  background-color: #1f1f1f;
+  height: 100vh;
+}
+
+.app__body {
+  display: flex;
+  height: 100%;
+}
