@@ -27,7 +27,7 @@ function C1() {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
-      });
+    });
 
     // CONTAINER ONE
     const [gameCard, setGameCard] = useState([]);
