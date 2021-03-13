@@ -1,0 +1,17 @@
+REDUX
+    - CREATE A SLICE AS A COMPONENT FOR STORING PARTICULAR ENTITY
+        - name
+        - initialState                                            // useSelector(<initialState>)
+        - reducers                                                // CONTAINS FUNCTIONS WHICH CHANGES initialState
+            - actions                                             // useDispatch() ---> CHANGE initialState
+                - state                                           // CURRENT state
+    - STORE ---> AS A REDUCER
+        
+==================================================================================================================
+
+useState()                                --->                     react
+useEffect()                               --->                     react
+useHistory()                              --->                     react-router-dom
+useSelector()                             --->                     react-redux
+useDispatch()                             --->                     react-redux
+useForm()                                 --->                     react-hook-form
