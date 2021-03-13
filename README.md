@@ -48,7 +48,7 @@
         - AUTHENTICATING
         - HOSTING
     - DEPLOYED SITES
-        - [AMAZON_CLONE](https://clone-v2-89be0.web.app)
+        - <a href="https://clone-v2-89be0.web.app" >AMAZON_CLONE</a>
         - [INSTAGRAM_REELS_CLONE](https://ig-reels-clone-76382.web.app/)
         - [GMAIL_CLONE](https://clone-bf866.web.app)
         - [UBISOFT_CLONE](https://ubisoft-clone.web.app)
