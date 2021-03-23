@@ -11,7 +11,7 @@
         - @material-ui/core @material-ui/icons            
             - STYLING
         - firebase & firebase-tools
-        - swiper-js
+        - swiper
         - react-player
             - PLAY YOUTUBE VIDEOS
         - react-hook-form
