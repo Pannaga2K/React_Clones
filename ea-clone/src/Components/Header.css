@@ -1,0 +1,296 @@
+.header {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+/* HEADER TOP */
+.header__top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    background-color: #1f1f1f;
+    transition: 0.4s all;
+}
+
+.header__top__logo {
+    width: 15%; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__top__logoThree {
+    width: 40px;
+    height: 16px;
+}
+
+.header__top__logoOne {
+    width: 30px !important;
+    height: 40px !important;
+}
+
+.header__top__logoTwo {
+    width: 12px;
+}
+
+/* HEADER BOTTOM */
+.header__bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: #0f0f0f;
+    transition: 600ms;
+}
+
+.header__bottom__logo {
+    height: 35px;
+    margin-left: 10px;
+}
+
+.header__bottom__items {
+    display: flex;
+    flex: 0.6;
+    justify-content: space-around;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.header__bottom__itemsOptions > p {
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+.header__bottom__itemsOptions:hover {
+    color: whitesmoke !important;
+}
+
+.header__bottom__itemsOptions {
+    display: flex;
+    align-items: center;
+}
+
+.header__bottom__itemsIcon {
+    transform: scale(0.8);
+}
+
+.header__bottom__itemsOptions:hover .header__bottom__itemsIcon {
+    transform: rotateX(180deg);
+    transition: 500ms transform;
+}
+
+.header__bottom__itemsDropdown {
+    display: none;
+    position: absolute;
+    top: 90px;
+    background-color: black;
+    /* margin-top: 10px; */
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+    transition: 500ms display;
+    z-index: 1;
+}
+
+.header__bottom__flex {
+    display: flex;
+}
+
+.header__bottom__item{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.header__bottom__item > h3 {
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+.header__bottom__item > hr {
+    border-color: grey;
+    border-width: 1px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin-top: 10px;
+}
+
+.dropdown:hover .header__bottom__itemsDropdown {
+    display: block;
+    animation: slide-down .3s ease-out;
+}
+
+@keyframes slide-down {
+    0% { opacity: 0; transform: translateY(-25%); }   
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* SIDEBAR */
+.sidebar {
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    z-index: 99;
+    top: 40px;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    margin-left: -400px;
+}
+
+.header__bottomIcon:hover {
+    transform: scale(1.2);
+    transition: 300ms;
+    color: #FF4747;
+    cursor: pointer;
+}
+
+.closeIcon {
+    align-self: flex-end;
+    margin-right: 40px;
+    color: whitesmoke;
+}
+
+.closeIcon:hover, .sidebar__top > h3:hover  {
+    color: #FF4747;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.sidebar__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar__top > h3 {
+    margin-left: 20px;
+}
+
+/* SIDEBAR COMPONENTS */
+.sidebar__components {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 65px;
+}
+
+.sidebar__mainGameGrid {
+    width: 250px;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    transition: 500ms all;
+    background: local;
+}
+
+.sidebar__mainGameGridImage2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    z-index: 1;
+}
+
+.sidebar__mainGameGridImage {
+    width: 335px;
+}
+
+.sidebar__mainGameGridHover {
+    position: absolute;
+    width: 335px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar__gradient {
+    display: none;
+    color: whitesmoke;
+}
+
+.sidebar__mainGameGrid:hover .sidebar__mainGameGridHover .sidebar__gradient {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    font-weight: 600;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #2E2A55 35%, #EE565A 100%);
+    cursor: pointer;
+}
+
+.sidebar__mainGameGridHover:hover .sidebar__mainGameGridImage2 {
+    margin-bottom: 150px;
+    transition: 400ms margin-bottom;
+}
+
+.sidebar__mainGameGridHover:not(:hover) .sidebar__mainGameGridImage2 {
+    margin-bottom: 0px;
+    transition: 400ms margin-bottom;
+}
+
+.sidebar__subGameGrids {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sidebar__subGameGridImage {
+    position: relative;
+    width: 160px;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+.sidebar__subGameGridImage2 {
+    width: 76px;
+    height: auto;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar__subGameGrids:hover .sidebar__subGameGridImage2 {
+    transform: scale(1.2);
+    transition: 300ms transform;
+}
+
+.sidebar__subGame {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.sticky, .headerLogo {
+    margin-top: -40px !important;
+    transition: margin-top 0.4s;
+}

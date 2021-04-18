@@ -1,0 +1,185 @@
+.body__containerTwo {
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    width: 100%;
+    height: auto;
+}
+
+.body__containerTwo > h1 {
+    width: fit-content;
+    margin: 25px auto;
+}
+
+.latestUpdatesTitle {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* BUTTON */
+.latestUpdatesTitle > button {
+    width: 100%;
+    height: 50px;
+    background-color: #0f0f0f;
+    border: none;
+    outline: none;
+    border-right: 1px solid #1f1f1f;
+    color: grey;
+    transition: 500ms background-color;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.latestUpdatesTitle > button:hover, #selected__button{
+    background-color: #1f1f1f;
+    border-bottom: 2px solid #FF4747;
+    color: whitesmoke;
+}
+
+.rearEnd__button {
+    border-right: none !important;
+}
+
+/* SWIPER */
+.swiper-container {
+    width: 65% !important;
+    margin-bottom: 35px;
+}
+
+.swiper-slide {
+    width: fit-content;
+    height: fit-content;
+}
+
+.swiper-button-prev , .swiper-button-next {
+    top: 65vh !important;
+    color: grey !important;
+    padding: 10px;
+    transition: color 500ms;
+}
+
+.swiper-button-prev:hover , .swiper-button-next:hover {
+    color: black !important;
+}
+
+/*  STYLING CARDS */
+.cards {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* box-shadow: 0 0 1px 1px black; */
+    background-color: black;
+    color: #f0f0f0;
+    margin-right: 10px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    box-shadow: rgba(255, 255, 255, 0.06) 0px 2px 4px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: rgba(255, 255, 255, 0.22) 0px 10px 25px;
+    transform: translate3d(0px, -10px, 0px);
+}
+
+.card > img {
+    width: 350px;
+}
+
+.card__inner {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    height: 300px;
+}
+
+.card__header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.card__header > p {
+    width: fit-content;
+    margin-right: 10px;
+}
+
+.card__header > p:nth-child(1) {
+    color: #FF4747;
+}
+
+.card__info > h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* BUTTON[LINK] */
+.body__containerTwoLink {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+/* DIV */
+.body__containerTwoLink > div {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+.body__containerTwoLink > div:hover {
+    width: 210px;
+    height: 60px;
+    transition: 200ms all;
+}
+
+.body__containerTwoLink > div > a {
+    position: absolute;
+    background-color: transparent;
+    /* border: 1px solid #0f0f0f; */
+    border-radius: 3px;
+    outline: none;
+    width: 75%;
+    height: 75%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: auto;
+    color: whitesmoke;
+    padding: 5px 24px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.body__containerTwoLink > div > a:focus {
+    background-color: whitesmoke;
+    color: #0f0f0f;
+}
