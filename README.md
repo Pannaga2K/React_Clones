@@ -56,4 +56,4 @@
     - [GMAIL_CLONE](https://clone-bf866.web.app)
     - [UBISOFT_CLONE](https://ubisoft-clone.web.app)
     - [WHATSAPP_CLONE](https://whatsapp-clone-f7c3b.firebaseapp.com)
- 
+    - [EA_CLONE](https://ea-clone.web.app)
