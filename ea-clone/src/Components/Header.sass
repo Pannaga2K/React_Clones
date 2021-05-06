@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap')
+
+.dropdown 
+  display: flex
+  justify-content: center
+  align-items: center
+  color: #0f0f0f
+  position: relative
+  font-size: 18px
+  z-index: 99
+  &:hover
+    cursor: pointer  
+  &:hover .dropdown_menu a
+    display: block
+   
+
+.dropdown_menu
+   position: absolute
+   top: 100%
+   left: 0%
+   width: auto
+   height: auto
+   z-index: -1
+   align-items: center
+   background-color: white
+   a
+    display: none
+    color: #0f0f0f
+    font-size: 16px
+    opacity: 0
+    &:hover
+      color: grey   
+
+
+// Menu as a whole animated
+.dropdown:hover .dropdown_menu--animated
+    display: block
+.dropdown_menu--animated
+    display: none
+    a
+      display: block
+      width: 150px
+      opacity: 1
+
+.dropdown_menu-6
+  animation: growDown 500ms ease-in-out forwards
+  transform-origin: top center
+
+@keyframes growDown
+  0% 
+    transform: scaleY(0)
+  40% 
+    transform: scaleY(1.1)
+  100% 
+    transform: scaleY(1)

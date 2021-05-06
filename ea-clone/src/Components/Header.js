@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./Header.css";
+import "./Header.sass";
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import EA from "../Logos/EA.png";
 import MoreVertIcon from '@material-ui/icons/MoreVert';
@@ -98,10 +99,10 @@ function Header() {
                 </div>
                 <img className="header__bottom__logo" src="https://media.contentapi.ea.com/content/dam/eacom/common/ea-wordmark-network-nav-coral.svg" alt="..." />
                 <div className="header__bottom__items" >
-                    <div className="header__bottom__itemsOptions dropdown" >
+                    <div className="header__bottom__itemsOptions dropdown dropdown-6" >
                         <p>Games</p>
                         <ExpandMoreIcon className="header__bottom__itemsIcon" />
-                        <div className="header__bottom__itemsDropdown" >
+                        <div className="header__bottom__itemsDropdown dropdown_menu dropdown_menu--animated dropdown_menu-6" >
                             <div className="header__bottom__flex">
                                 <div className="header__bottom__item" >
                                     <h3>BROWSE GAMES</h3>
@@ -124,10 +125,10 @@ function Header() {
                             </div>
                         </div>
                     </div>
-                    <div className="header__bottom__itemsOptions dropdown" >
+                    <div className="header__bottom__itemsOptions  dropdown dropdown-6" >
                         <p>More Experiences</p>
                         <ExpandMoreIcon className="header__bottom__itemsIcon" />
-                        <div className="header__bottom__itemsDropdown" >
+                        <div className="header__bottom__itemsDropdown dropdown_menu dropdown_menu--animated dropdown_menu-6" >
                             <div className="header__bottom__item" >
                                 <a href="/" >SUBSCRIBE</a>
                                 <a href="/" >ORIGIN</a>
@@ -136,10 +137,10 @@ function Header() {
                             </div>
                         </div>
                     </div>
-                    <div className="header__bottom__itemsOptions dropdown" >
+                    <div className="header__bottom__itemsOptions  dropdown dropdown-6" >
                         <p>About</p>
                         <ExpandMoreIcon className="header__bottom__itemsIcon" />
-                        <div className="header__bottom__itemsDropdown" >
+                        <div className="header__bottom__itemsDropdown dropdown_menu dropdown_menu--animated dropdown_menu-6" >
                             <div className="header__bottom__item" >
                                 <a href="/" >COMPANY</a>
                                 <a href="/" >EA STUDIOS</a>
@@ -150,10 +151,10 @@ function Header() {
                             </div>
                         </div>
                     </div>
-                    <div className="header__bottom__itemsOptions dropdown" >
+                    <div className="header__bottom__itemsOptions  dropdown dropdown-6" >
                         <p>Commitments</p>
                         <ExpandMoreIcon className="header__bottom__itemsIcon" />
-                        <div className="header__bottom__itemsDropdown" >
+                        <div className="header__bottom__itemsDropdown dropdown_menu dropdown_menu--animated dropdown_menu-6" >
                             <div className="header__bottom__item" >
                                 <a href="/" >POSITIVE PLAY</a>
                                 <a href="/" >INCLUSION AND DIVERSITY</a>
@@ -163,10 +164,10 @@ function Header() {
                             </div>
                         </div>
                     </div>
-                    <div className="header__bottom__itemsOptions dropdown" >
+                    <div className="header__bottom__itemsOptions  dropdown dropdown-6" >
                         <p>Resources</p>
                         <ExpandMoreIcon className="header__bottom__itemsIcon" />
-                        <div className="header__bottom__itemsDropdown" >
+                        <div className="header__bottom__itemsDropdown dropdown_menu dropdown_menu--animated dropdown_menu-6" >
                             <div className="header__bottom__item" >
                                 <a href="/" >HELP</a>
                                 <a href="/" >FORUMS</a>
